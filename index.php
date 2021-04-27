@@ -13,14 +13,14 @@
 
         <div class="container justify-content-center">
             <form action="" method="POST">
-                <input type="text" placeholder="Enter your name" name="name">
-                <input type="text" placeholder="Enter your qualification" name="degree">
-                <input type="number" placeholder="Enter your mobile" name="mobile">
-                <input type="email" placeholder="Enter your email" name="email">
-                <input type="text" placeholder="Enter your references" name="reference">
-                <input type="text" placeholder="Enter your jobpost" name="profile">
+                <input type="text" placeholder="Enter your name" name="name"><br>
+                <input type="text" placeholder="Enter your qualification" name="degree"><br>
+                <input type="number" placeholder="Enter your mobile" name="mobile"><br>
+                <input type="email" placeholder="Enter your email" name="email"><br>
+                <input type="text" placeholder="Enter your references" name="reference"><br>
+                <input type="text" placeholder="Enter your jobpost" name="profile"><br>
 
-                <input type="submit" name="submit" value="Submit">
+                <input type="submit" name="submit" value="Submit"><br>
                 <a href="./display.php">Check Form</a>
             </form>
         </div>

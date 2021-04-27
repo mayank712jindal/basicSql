@@ -43,14 +43,15 @@
                                 <td><?php echo $res['email'] ?></td>
                                 <td><?php echo $res['refer'] ?></td>
                                 <td><?php echo $res['jobPost'] ?></td>
-                                <td><ion-icon name="create-outline" class="update"></ion-icon></td>
-                                <td><ion-icon name="trash-outline" class="delete"></ion-icon></td>
+                                <td><a href="update.php?id=<?php echo $res['id'] ?>"><ion-icon name="create-outline" class="update"></ion-icon></a></td>
+                                <td><a href="delete.php?id=<?php echo $res['id'] ?>"><ion-icon name="trash-outline" class="delete"></ion-icon></a></td>
                             </tr>
                             <?php
                         }
                     ?>
                 </tbody>
             </table>
+            <a href="./index.php">Add New Item</a>
         </div>
 
     </div>
@@ -58,12 +59,5 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>   
     <script src="./script.js"></script>
-    <script>
-        $(document).on("click",function(){
-            if(this.className="update md hydrated")
-                console.log("hello");
-            }
-        });
-    </script>
     </body>
 </html>

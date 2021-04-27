@@ -13,15 +13,27 @@
 
         <div class="container justify-content-center">
             <form action="" method="POST">
-                <input type="text" placeholder="Enter your name" name="name">
-                <input type="text" placeholder="Enter your qualification" name="degree">
-                <input type="number" placeholder="Enter your mobile" name="mobile">
-                <input type="email" placeholder="Enter your email" name="email">
-                <input type="text" placeholder="Enter your references" name="reference">
-                <input type="text" placeholder="Enter your jobpost" name="profile">
 
-                <input type="submit" name="submit" value="Submit">
-                <a href="./display.php">Check Form</a>
+                 <?php 
+                    include "connection.php";
+
+                    $updateID=$_GET['id'];
+
+                    $select= "select * from jobapplication where id=$updateID";
+                    $showdata=mysqli_query($con,$select);
+                    $arrData= mysqli_fetch_array($showdata);
+                ?>
+
+                <input type="text" placeholder="Enter your name" name="name" value="<?php echo $arrData['name']?>"><br>
+                <input type="text" placeholder="Enter your qualification" name="degree" value="<?php echo $arrData['degree']?>"><br>
+                <input type="number" placeholder="Enter your mobile" name="mobile" value="<?php echo $arrData['mobile']?>"><br>
+                <input type="email" placeholder="Enter your email" name="email" value="<?php echo $arrData['email']?>"><br>
+                <input type="text" placeholder="Enter your references" name="reference" value="<?php echo $arrData['refer']?>"><br>
+                <input type="text" placeholder="Enter your jobpost" name="profile" value="<?php echo $arrData['jobPost']?>"><br>
+
+                <input type="submit" name="update" value="Update"><br>
+                <a href="./display.php">Check Form</a><br>
+                <a href="./index.php">Add New Item</a>
             </form>
         </div>
 
@@ -30,10 +42,10 @@
     </body>
 </html>
 
-<?php 
-include "connection.php";
+<?php
 
-if(isset($_POST['submit'])){
+if(isset($_POST['update'])){
+    $updateID=$_GET['id'];
     $name= $_POST['name'];
     $degree= $_POST['degree'];
     $mobile= $_POST['mobile'];
@@ -41,10 +53,9 @@ if(isset($_POST['submit'])){
     $reference= $_POST['reference'];
     $profile= $_POST['profile'];
 
-    $insertquery= " insert into 
-    jobapplication(name,degree,mobile,email,refer,jobPost) 
-    values('$name','$degree','$mobile','$email','$reference','$profile')";
+    $updatequery= " update jobapplication SET name='$name',degree='$degree',mobile='$mobile',email='$email',refer='$reference',jobPost='$profile' where id=$updateID";
 
-    mysqli_query($con,$insertquery);
+    mysqli_query($con,$updatequery);
+    header('location:display.php');
 }
 ?>
