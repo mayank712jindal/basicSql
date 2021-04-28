@@ -1,0 +1,19 @@
+/* index.php */
+input{
+    height: 50px;
+    width: 400px;
+    /* border-radius: 5px; */
+    outline: none;
+    margin: 10px 5px;
+}
+
+/* display.php */
+td,th{
+    height: 50px;
+    width: 300px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+}
+th{
+    text-transform: uppercase;
+}
