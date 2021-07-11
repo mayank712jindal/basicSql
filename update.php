@@ -8,18 +8,20 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
 
-        <div class="container-fluid justify-content-center row">
-                <div class="col-12 text-center">
-                    <h1>Job Registration</h1>
-                </div>
-                <div class="col-md-6">
-                    bgbfgng
-                </div>
-                <div class="col-md-6 text-center">
+        <div class="container-fluid d-flex flex-wrap justify-content-around align-items-center main p-3">
+            <div class="col-12 text-center text-white text-uppercase">
+                <h1>Job Registration</h1>
+            </div>
+
+            <div class="p-2 m-2">
+                <img src="./undraw_Resume_re_hkth.svg">
+            </div>
+
+            <div class="p-2 m-2">
             <form action="" method="POST">
 
                  <?php 
@@ -38,14 +40,15 @@
                 <input type="email" placeholder="Enter your email" name="email" value="<?php echo $arrData['email']?>"><br>
                 <input type="text" placeholder="Enter your references" name="reference" value="<?php echo $arrData['refer']?>">
                 <input type="text" placeholder="Enter your jobpost" name="profile" value="<?php echo $arrData['jobPost']?>"><br>
-
-                <input type="submit" name="update" value="Update" class="btn btn-success"><br>
+                <div class="d-flex flex-wrap justify-content-center">
+                <input type="submit" name="update" value="Update" class="btn">
+                <div>
                 
             </form>
         </div>
-        <div class="col-12 text-center">
-        <a href="./index.php"><input type="button" value="Add New Item" class="btn btn-primary"></a>
-        <a href="./display.php"><input type="button" value="Check Form" class="btn btn-primary"></a>
+        <div class="col-12 d-flex flex-wrap justify-content-center">
+        <a href="./index.php"><input type="button" value="Add New Item" class="btn"></a>
+        <a href="./display.php"><input type="button" value="Check Form" class="btn"></a>
             </div>
      </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

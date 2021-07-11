@@ -1,22 +1,11 @@
 /* index.php */
 input {
   height: 50px;
-  width: 400px;
-  /* border-radius: 5px; */
+  width: 350px;
+  border-radius: 5px;
   outline: none;
   margin: 10px 5px;
-}
-
-/* display.php */
-td,
-th {
-  height: 50px;
-  width: 300px;
-  padding: 5px 10px;
-  font-size: 1.2rem;
-}
-th {
-  text-transform: uppercase;
+  padding: 5px;
 }
 
 .main {
@@ -29,8 +18,35 @@ th {
     #7c77d0,
     #7c77d0
   );
+  /* padding: 10px 2px; */
 }
 
 .main img {
-  height: 50%;
+  height: 350px;
+  width: 350px;
+}
+
+.btn {
+  background-color: #0b1b2d;
+  color: white;
+  width: 200px;
+  border-radius: 30px;
+}
+a {
+  color: black;
+}
+
+/*******************************/
+/* display.php */
+td,
+th {
+  height: 50px;
+  width: 300px;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+th {
+  text-transform: uppercase;
 }

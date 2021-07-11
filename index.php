@@ -12,24 +12,26 @@
     </head>
     <body>
         
-             <div class="col-12 text-center">
+             
+        <div class="container-fluid d-flex flex-wrap justify-content-around align-items-center main p-3">
+        <div class="col-12 text-center text-white text-uppercase">
                     <h1>Job Registration</h1>
                 </div>
-        <div class="container-fluid justify-content-around row main">
-                
-                <div class="col-md-6">
+                <div class="p-2 m-2">
                     <img src="./undraw_Resume_re_hkth.svg">
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="p-2 m-2">
                     <form action="" method="POST" class="form-group">
-                        <input type="text" placeholder="Enter your name" name="name">
-                        <input type="text" placeholder="Enter your qualification" name="degree"><br>
-                        <input type="number" placeholder="Enter your mobile" name="mobile">
-                        <input type="email" placeholder="Enter your email" name="email"><br>
-                        <input type="text" placeholder="Enter your references" name="reference">
-                        <input type="text" placeholder="Enter your jobpost" name="profile"><br>
-                        <input type="submit" name="submit" value="Submit" class="btn btn-primary">
-                        <a href="./display.php"><input type="button" value="Display Form" class="btn btn-primary"></a>
+                        <input type="text" placeholder="Enter your name" name="name" required>
+                        <input type="text" placeholder="Enter your qualification" name="degree" required><br>
+                        <input type="number" placeholder="Enter your mobile" name="mobile" required>
+                        <input type="email" placeholder="Enter your email" name="email" required><br>
+                        <input type="text" placeholder="Enter your references" name="reference" required>
+                        <input type="text" placeholder="Enter your jobpost" name="profile" required><br>
+                        <div class="d-flex flex-wrap justify-content-center">
+                        <input type="submit" name="submit" value="Submit" class="btn">
+                        <a href="./display.php"><input type="button" value="Display Form" class="btn"></a>
+                        </div>
                     </form>
                 </div>
         </div>
