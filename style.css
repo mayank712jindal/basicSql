@@ -25,6 +25,9 @@ input {
   );
   /* padding: 10px 2px; */
 }
+#mainContent {
+  min-height: 95vh;
+}
 
 .main img {
   height: 350px;
@@ -54,4 +57,15 @@ th {
 
 th {
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 480px) {
+  .main img {
+    height: 260px;
+    width: 260px;
+  }
+
+  .fixed-top h1 {
+    font-size: 1.9rem;
+  }
 }

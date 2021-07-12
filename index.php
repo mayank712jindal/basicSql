@@ -10,22 +10,27 @@
     </head>
     <body>
         
-             
-        <div class="container-fluid d-flex flex-wrap justify-content-around align-items-center main p-3">
-        <div class="col-12 text-center text-white text-uppercase">
+             <!-- header -->
+             <div class="col-12 text-center text-white text-uppercase main p-2 fixed-top">
                     <h1>Job Registration</h1>
                 </div>
+
+                <!-- body -->
+        <div class="container-fluid d-flex flex-wrap justify-content-around align-items-center main p-3 my-5" id="mainContent">
+        
                 <div class="p-2 m-2">
                     <img src="./undraw_Resume_re_hkth.svg">
                 </div>
-                <div class="p-2 m-2">
+                <div class="p-2 m-2 col-lg-7">
                     <form action="" method="POST" class="form-group">
+                        <div class="d-flex flex-wrap justify-content-center align-items-center">
                         <input type="text" placeholder="Enter your name" name="name" required>
-                        <input type="text" placeholder="Enter your qualification" name="degree" required><br>
+                        <input type="text" placeholder="Enter your qualification" name="degree" required>
                         <input type="number" placeholder="Enter your mobile" name="mobile" required>
-                        <input type="email" placeholder="Enter your email" name="email" required><br>
+                        <input type="email" placeholder="Enter your email" name="email" required>
                         <input type="text" placeholder="Enter your references" name="reference" required>
-                        <input type="text" placeholder="Enter your jobpost" name="profile" required><br>
+                        <input type="text" placeholder="Enter your jobpost" name="profile" required>
+                        </div>
                         <div class="d-flex flex-wrap justify-content-center">
                         <input type="submit" name="submit" value="Submit" class="btn">
                         <a href="./display.php"><input type="button" value="Display Form" class="btn"></a>
@@ -33,6 +38,11 @@
                     </form>
                 </div>
         </div>
+
+         <!-- footer -->
+         <div class="col-12 text-center text-white text-uppercase main fixed-bottom pt-2 mt-5">
+                    <p>Made with &#10084; by Mayank Jindal</p>
+                </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
